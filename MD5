@@ -1,0 +1,17 @@
+1ae0203750708829018f71e7f47c2a8f *DESCRIPTION
+1ee0683cce6d3479250337954c075d63 *LICENSE
+fdaae10a4085ec7411170a4016a86ec7 *NAMESPACE
+ccb7c1135fc4478b094c78ea99b1760e *R/chroot.R
+92ed98f5304b55b7fe2d1b1288b3640f *R/process.R
+0b77215c26baa101561922a5a2148ece *R/rlimit.R
+5744bc8edd2881c5ffe1a0ba674a1ee0 *R/userinfo.R
+c32ff23b14a8b1ae7d1db7c8dcbe5d83 *configure.win
+6b3cbaab5e781b6f8b7d7a79af8808d3 *man/chroot.Rd
+f92b29dc7759b757051710146d4e5525 *man/process.Rd
+108d52d6f4bf61ad7b471f13519eeb9b *man/rlimit.Rd
+b567ee92bd0d25017769a9548f19fbda *man/userinfo.Rd
+06a221fb8fd5be0eb4155752b95d0385 *src/chroot.c
+3a3cbfee51fc91abdd9b05df8feba2aa *src/process.c
+e56d0605760c82bb454bda87c0d21e7e *src/register.c
+c0590add716452d039fce32e8ffe8054 *src/rlimit.c
+50b7a9afc43e23d88248b2205ba7b71c *src/userinfo.c
