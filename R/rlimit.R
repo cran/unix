@@ -1,13 +1,16 @@
 #' Resource Limits
 #' 
 #' Get and set process resource limits. Each function returns the current limits, and
-#' can optionally update the limit by passing argument values.
+#' can optionally update the limit by passing argument values. The `rlimit_all()` 
+#' function is a convenience wrapper which prints all current hard and soft limits.
+#' 
 #' 
 #' Each resource has an associated soft and  hard limit. The soft limit is the value
 #' that the kernel enforces for the corresponding resource.  The hard limit acts as a
 #' ceiling for the soft limit: an unprivileged process may set only its soft limit to 
 #' a value in the range from 0 up to the hard limit, and (irreversibly) lower its hard 
 #' limit.
+#' 
 #' 
 #' Definitons from the [Linux manual page](http://man7.org/linux/man-pages/man2/setrlimit.2.html)
 #' are as follows:
@@ -35,19 +38,48 @@
 #' 
 #' @rdname rlimit
 #' @name rlimit
-#' @useDynLib unix R_rlimit_as
 #' @export
 #' @param cur set the current (soft) limit for this resource. See details.
 #' @param max set the max (hard) limit for this resource. See details.
 #' @references [GETRLIMIT(2)](http://man7.org/linux/man-pages/man2/setrlimit.2.html)
-#' @examples # Get current limit
+#' @examples # Print all limits
+#' rlimit_all()
+#' 
+#' # Get one limit
 #' rlimit_as()
 #' 
 #' # Set a soft limit
-#' rlimit_as(1e9)
-#'
-#' # Set a hard limit
+#' lim <- rlimit_as(1e9)
+#' print(lim)
+#' 
+#' # Reset the limit to max
+#' rlimit_as(cur = lim$max)
+#' 
+#' \dontrun{
+#' # Set a hard limit (irreversible)
 #' rlimit_as(max = 1e10)
+#' }
+rlimit_all <- function(){
+  data <- rbind(
+    as = rlimit_as(),
+    core = rlimit_core(),
+    cpu = rlimit_cpu(),
+    data = rlimit_data(),
+    fsize = rlimit_fsize(),
+    memlock = suppressWarnings(rlimit_memlock()),
+    nofile = rlimit_nofile(),
+    nproc = suppressWarnings(rlimit_nproc()),
+    stack = rlimit_stack()
+  )
+  list(
+    cur = unlist(data[,"cur"]),
+    max = unlist(data[,"max"])
+  )
+}
+
+#' @rdname rlimit
+#' @useDynLib unix R_rlimit_as
+#' @export
 rlimit_as <- function(cur = NULL, max = NULL){
   if(length(cur)) stopifnot(is.numeric(cur))
   if(length(max)) stopifnot(is.numeric(max))

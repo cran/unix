@@ -3,14 +3,18 @@
 \name{getuid}
 \alias{getuid}
 \alias{getgid}
+\alias{geteuid}
+\alias{getegid}
 \alias{getpid}
 \alias{getppid}
 \alias{getpgid}
-\alias{getprio}
+\alias{getpriority}
 \alias{setuid}
+\alias{seteuid}
 \alias{setgid}
+\alias{setegid}
 \alias{setpgid}
-\alias{setprio}
+\alias{setpriority}
 \alias{kill}
 \title{Process Info}
 \usage{
@@ -18,21 +22,29 @@ getuid()
 
 getgid()
 
+geteuid()
+
+getegid()
+
 getpid()
 
 getppid()
 
 getpgid()
 
-getprio()
+getpriority()
 
 setuid(uid)
 
+seteuid(uid)
+
 setgid(gid)
+
+setegid(gid)
 
 setpgid(pgid = 0)
 
-setprio(prio)
+setpriority(prio)
 
 kill(pid, signal = SIGTERM)
 }
@@ -59,7 +71,9 @@ Acronyms stand for:
 \item \code{ppid} Parent-Process ID
 \item \code{pgid} Process-Group ID
 \item \code{uid} User ID
+\item \code{euid} Effective User ID
 \item \code{gid} Group ID
+\item \code{egid} Effective Group ID
 \item \code{prio} Priority level
 }
 
@@ -71,6 +85,10 @@ process priority (higher value).
 getuid()
 # Current UserGroup:
 getgid()
+# Current UserGroup:
+geteuid()
+# Current UserGroup:
+getegid()
 # Process ID
 getpid()
 # parent PID:
@@ -82,9 +100,9 @@ getpgid()
 setpgid(0)
 getpgid()
 # Process priority:
-getprio()
+getpriority()
 # Decrease priority
-setprio(getprio() + 1)
+setpriority(getpriority() + 1)
 }
 \references{
 \href{http://man7.org/linux/man-pages/man2/getuid.2.html}{GETUID(2)}

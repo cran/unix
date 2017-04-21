@@ -2,6 +2,7 @@
 % Please edit documentation in R/rlimit.R
 \name{rlimit}
 \alias{rlimit}
+\alias{rlimit_all}
 \alias{rlimit_as}
 \alias{rlimit_core}
 \alias{rlimit_cpu}
@@ -13,6 +14,8 @@
 \alias{rlimit_stack}
 \title{Resource Limits}
 \usage{
+rlimit_all()
+
 rlimit_as(cur = NULL, max = NULL)
 
 rlimit_core(cur = NULL, max = NULL)
@@ -38,7 +41,8 @@ rlimit_stack(cur = NULL, max = NULL)
 }
 \description{
 Get and set process resource limits. Each function returns the current limits, and
-can optionally update the limit by passing argument values.
+can optionally update the limit by passing argument values. The \code{rlimit_all()}
+function is a convenience wrapper which prints all current hard and soft limits.
 }
 \details{
 Each resource has an associated soft and  hard limit. The soft limit is the value
@@ -72,14 +76,23 @@ Note that the support for enforcing limits very widely by system. In particular
 by the operating system (and doesn't work at all on MacOS).
 }
 \examples{
-# Get current limit
+# Print all limits
+rlimit_all()
+
+# Get one limit
 rlimit_as()
 
 # Set a soft limit
-rlimit_as(1e9)
+lim <- rlimit_as(1e9)
+print(lim)
 
-# Set a hard limit
+# Reset the limit to max
+rlimit_as(cur = lim$max)
+
+\dontrun{
+# Set a hard limit (irreversible)
 rlimit_as(max = 1e10)
+}
 }
 \references{
 \href{http://man7.org/linux/man-pages/man2/setrlimit.2.html}{GETRLIMIT(2)}
