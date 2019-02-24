@@ -1,6 +1,6 @@
 Package: unix
 Title: POSIX System Utilities
-Version: 1.4
+Version: 1.5
 Authors@R: person("Jeroen", "Ooms", email = "jeroen@berkeley.edu", 
     comment = c(ORCID = "0000-0002-4035-0289"), role = c("aut", "cre"))
 Description: Bindings to system utilities found in most Unix systems such as
@@ -14,8 +14,8 @@ RoxygenNote: 6.1.1
 Suggests: testthat
 Language: en-US
 NeedsCompilation: yes
-Packaged: 2019-02-22 14:23:38 UTC; jeroen
+Packaged: 2019-02-24 20:06:57 UTC; jeroen
 Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)
 Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
 Repository: CRAN
-Date/Publication: 2019-02-22 14:40:03 UTC
+Date/Publication: 2019-02-24 21:50:03 UTC
