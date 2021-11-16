@@ -1,11 +1,11 @@
-23bc651415e4c54393cf9857115134f3 *DESCRIPTION
+a1e6df1f6a0606a288ab4ff4b7979eb2 *DESCRIPTION
 1ee0683cce6d3479250337954c075d63 *LICENSE
 6967d30f08d0141ca670c55d0596457f *NAMESPACE
-ec105d7ce629df9331a93a9c6019d549 *NEWS
+62e14317e0476ada9eac6ee99602f275 *NEWS
 84f79ab8d9d171e6c1bae541f1f52e12 *R/chroot.R
 42057c3162050f2fcf9109aa2bc6cd87 *R/fork.R
 7fbc843e5db2f333c32d7bc11ba7166f *R/process.R
-b35df2edef1526e6e4cbb6d361a12ea7 *R/rlimit.R
+a319b7997d45d81324045a15fc75d39d *R/rlimit.R
 978702b031cdf6ed34d54f436db7035c *R/userinfo.R
 76c3feddcb294001d04422ee00d65ceb *R/util.R
 6071edd604dbeb75308cfbedc7790398 *cleanup
@@ -15,7 +15,7 @@ e62c6ea89d10d4517ce1c38f5ad509c7 *man/chroot.Rd
 b2cda2e16c9984e99b2b863f58454b1a *man/config.Rd
 4b9d2a49193f4fb3fc463537b18e0def *man/eval_fork.Rd
 fdb9b3e96ce30c26023bd711088a04ae *man/process.Rd
-58a0f78876e604e8828bcd9a078953f6 *man/rlimit.Rd
+e8f0932ea8e997881a168d088928ecd3 *man/rlimit.Rd
 63e20dc41f4dbbc50e55dd55d1dc7e1f *man/userinfo.Rd
 bc5532fe725a2e64502b035ae0ee23d1 *src/Makevars.in
 34cc00e7573673311912ecf3b22f5227 *src/chroot.c
@@ -26,5 +26,5 @@ f21b75fcde13159d3448cf56112946df *src/register.c
 0298026e6c4cead77d46bf4835131704 *src/userinfo.c
 38eb269bd03994f512f0e4fcc5fa4b19 *src/util.c
 dddc11b8bc9ab944f6d5613583ac281c *tests/testthat.R
-d1d5963e137fd3fdc523862af53ab205 *tests/testthat/test-forking.R
+d6397c7b6bbc4f69bc928121692fe424 *tests/testthat/test-forking.R
 c9f1184097f40e7814ed8047845d2c1b *tests/testthat/test-process.R
