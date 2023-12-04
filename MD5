@@ -1,7 +1,7 @@
-1499afb5afe0ea508fcaf9fba71d2902 *DESCRIPTION
+578a81be381c77c4052c81ac3bab5e05 *DESCRIPTION
 1ee0683cce6d3479250337954c075d63 *LICENSE
 6967d30f08d0141ca670c55d0596457f *NAMESPACE
-ee31fcaefeae103ab858c1ab6ca28c05 *NEWS
+4a8a7991cdbf45558bdebae818c05734 *NEWS
 84f79ab8d9d171e6c1bae541f1f52e12 *R/chroot.R
 42057c3162050f2fcf9109aa2bc6cd87 *R/fork.R
 7fbc843e5db2f333c32d7bc11ba7166f *R/process.R
@@ -19,7 +19,7 @@ e8f0932ea8e997881a168d088928ecd3 *man/rlimit.Rd
 63e20dc41f4dbbc50e55dd55d1dc7e1f *man/userinfo.Rd
 bc5532fe725a2e64502b035ae0ee23d1 *src/Makevars.in
 34cc00e7573673311912ecf3b22f5227 *src/chroot.c
-acd4f1ca63ba29a44ae7ed3aea6df8a9 *src/fork.c
+8123bade4e9b0b58f59186af08110e74 *src/fork.c
 8a63a638153c6ee9eae51c5b9c910b18 *src/process.c
 5ae9a3f83d076ec63cd5cf2aadb2fab9 *src/register.c
 afe7b335a0e480f01c1032f20ae8586a *src/rlimit.c
