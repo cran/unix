@@ -1,7 +1,7 @@
 Package: unix
 Title: POSIX System Utilities
-Version: 1.5.8
-Authors@R: person("Jeroen", "Ooms", email = "jeroen@berkeley.edu", 
+Version: 1.5.9
+Authors@R: person("Jeroen", "Ooms", email = "jeroenooms@gmail.com", 
     comment = c(ORCID = "0000-0002-4035-0289"), role = c("aut", "cre"))
 Description: Bindings to system utilities found in most Unix systems such as
     POSIX functions which are not part of the Standard C Library.
@@ -15,8 +15,8 @@ Suggests: testthat
 Language: en-US
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2024-05-14 13:37:14 UTC; jeroen
+Packaged: 2024-10-03 14:13:20 UTC; jeroen
 Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)
-Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-05-14 15:10:02 UTC
+Date/Publication: 2024-10-04 09:10:05 UTC
