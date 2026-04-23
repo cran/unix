@@ -1,6 +1,6 @@
 Package: unix
 Title: POSIX System Utilities
-Version: 1.5.9
+Version: 1.6.0
 Authors@R: person("Jeroen", "Ooms", email = "jeroenooms@gmail.com", 
     comment = c(ORCID = "0000-0002-4035-0289"), role = c("aut", "cre"))
 Description: Bindings to system utilities found in most Unix systems such as
@@ -15,8 +15,8 @@ Suggests: testthat
 Language: en-US
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2024-10-03 14:13:20 UTC; jeroen
-Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)
+Packaged: 2026-04-23 08:55:24 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>)
 Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-10-04 09:10:05 UTC
+Date/Publication: 2026-04-23 09:20:02 UTC
